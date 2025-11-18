@@ -1,35 +1,25 @@
-pipeline {
-    agent {
-        docker {
-            image 'cypress/browsers:latest'
-            args '--user=root --entrypoint='
-        }
+pipeline{
+    agent{
+       docker{
+        
+       image 'cypress/included:13.6.6' 
+        args '--entrypoint=""'
+       }
     }
-
-    environment {
-        CYPRESS_INSTALL_BINARY = "0"   // Empêche le téléchargement du binaire Cypress
-    }
-
-    stages {
-
-        stage('Verify dependencies') {
-            steps {
-                sh 'node -v && npm -v'
+    stages{
+        stage('intall dependencies'){
+            steps{
+                sh 'npx cypress install'
             }
         }
-
-        stage('Install dependencies') {
-            steps {
-                sh 'npm ci'
-            }
-        }
-
-        stage('Run tests') {
-            steps {
+        stage('Run cypress'){
+            steps{
+                //sh './batchs/e2etests.sh'
+                //sh './batchs/e2etests.sh'
                 sh 'npx cypress run'
-                // ou si tu veux utiliser ton script:
-                // sh './cypress/e2e/batchs/login.sh'
             }
         }
+
     }
+    
 }
