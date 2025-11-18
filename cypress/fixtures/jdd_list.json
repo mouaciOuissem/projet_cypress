@@ -1,0 +1,17 @@
+{
+    "compte" : [
+        {
+            "name": "standard_user",
+            "pass":"secret_sauce",
+            "result":"ok"
+        },
+        {
+            "name": "wrong_user",
+            "pass":"wrong_pass",
+            "result":"ko"
+        }
+
+    ]
+}    
+    
+   

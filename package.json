@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@cypress/grep": "^5.0.0",
+    "allure-cypress": "^3.4.2",
+    "cypress": "^15.5.0",
+    "cypress-mochawesome-reporter": "^4.0.2"
+  }
+}

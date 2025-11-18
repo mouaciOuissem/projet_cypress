@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.444" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-10-29T15:06:00" tests="0" file="cypress\e2e\loginPOM.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="authentification avec POM" timestamp="2025-10-29T15:06:00" tests="2" time="6.441" failures="0">
+    <testcase name="authentification avec POM login with valid credentials" time="2.566" classname="login with valid credentials">
+    </testcase>
+    <testcase name="authentification avec POM login with wrong credentials" time="1.170" classname="login with wrong credentials">
+    </testcase>
+  </testsuite>
+</testsuites>
