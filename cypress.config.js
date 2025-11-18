@@ -4,11 +4,11 @@ import { allureCypress } from "allure-cypress/reporter";
 
 module.exports = defineConfig({
   // JUNIT 
-  /*reporter: 'junit',
+  reporter: 'junit',
   reporterOptions: {
     mochaFile: 'results/my-test-output-[hash].xml',
     toConsole: true,
-  },*/
+  },
   // MOCHAWESOME
   //reporter: 'cypress-mochawesome-reporter',
   e2e: {
