@@ -26,5 +26,4 @@ pipeline{
             junit 'results/*.xml'
         }
     }
-    
 }
