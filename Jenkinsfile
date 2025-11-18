@@ -19,11 +19,12 @@ pipeline{
                 sh 'npx cypress run'
             }
         }
+        stage('Generer un rapport'){
+            steps{
+                junit 'results/*.xml'
+            }
+        }
 
     }
-    post{
-        always{
-            junit 'results/*.xml'
-        }
-    }
+    
 }
