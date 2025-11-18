@@ -10,9 +10,10 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                sh 'npm install'
+                sh 'node --version'
                 sh 'npx cypress cache clear'
-                sh 'nm ci'
+                sh 'npm --version'
+                sh 'npm install '
             }   
         }
 
